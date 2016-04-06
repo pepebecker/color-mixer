@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>80</red>
+        <green>80</green>
+        <blue>80</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+   </palette>
+  </property>
+  <property name="windowTitle">
+   <string>Color Mixer</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="combo_slider_1">
+     <item>
+      <layout class="QHBoxLayout" name="slider_Layout_1">
+       <item>
+        <widget class="QLabel" name="color_1">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Red</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="slider_1">
+         <property name="styleSheet">
+          <string notr="true">
+          	QSlider::groove:horizontal {
+          	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgb(255, 100, 100), stop: 1 rgb(155, 0, 0));
+          	border-radius: 4px;
+          	}
+          	QSlider::add-page:horizontal {
+          	background: #333;
+          	}
+          </string>
+         </property>
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>128</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="value_1">
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="slider_Layout_3">
+       <item>
+        <widget class="QLabel" name="color_3">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Blue</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="slider_3">
+         <property name="styleSheet">
+          <string notr="true">
+          	QSlider::groove:horizontal {
+          	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgb(100, 100, 255), stop: 1 rgb(0, 0, 155));
+          	border-radius: 4px;
+          	}
+          	QSlider::add-page:horizontal {
+          	background: #333;
+          	}
+          </string>
+         </property>
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>128</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="value_3">
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="combo_slider_2">
+     <item>
+      <layout class="QHBoxLayout" name="slider_Layout_2">
+       <item>
+        <widget class="QLabel" name="color_2">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Green</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="slider_2">
+         <property name="styleSheet">
+          <string notr="true">
+          	QSlider::groove:horizontal {
+          	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgb(100, 255, 100), stop: 1 rgb(0, 155, 0));
+          	border-radius: 4px;
+          	}
+          	QSlider::add-page:horizontal {
+          	background: #333;
+          	}
+          </string>
+         </property>
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>128</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="value_2">
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="slider_Layout_4">
+       <item>
+        <widget class="QLabel" name="color_4">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Alpha</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="slider_4">
+         <property name="styleSheet">
+          <string notr="true">
+          	QSlider::groove:horizontal {
+          	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgb(255, 255, 255), stop: 1 rgb(155, 155, 155));
+          	border-radius: 4px;
+          	}
+          	QSlider::add-page:horizontal {
+          	background: #333;
+          	}
+          </string>
+         </property>
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>255</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="value_4">
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>255</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QWidget" name="color_widget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+       background: black;
+       border: 1px solid white;
+       border-radius: 4px;
+   	  </string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>slider_1</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>value_1</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>126</x>
+     <y>37</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>194</x>
+     <y>70</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>slider_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>value_2</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>100</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>192</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>slider_3</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>value_3</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>321</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>400</x>
+     <y>67</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>slider_4</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>value_4</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>296</x>
+     <y>116</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>394</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
