@@ -9,7 +9,7 @@ brew install qt4
 brew install pyqt
 ```
 
-Running from Command Line
+## Running from Command Line
 
 ```
 python main.py
