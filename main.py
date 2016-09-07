@@ -22,25 +22,25 @@ class Safe:
         self.new_code = [None, None, None]
         self.isReady = False
         self.isPrepared = False
-        print "Reset"
+        # print "Reset"
 
     def prepare(self):
         self.isPrepared = True
-        print "Prepared"
+        # print "Prepared"
 
     def ready(self):
         self.isPrepared = False
         self.isReady = True
-        print "Ready"
+        # print "Ready"
 
     def unlock(self):
         self.isReady = False
         self.unlocked = True
-        print "Unlocked"
+        # print "Unlocked"
 
     def apply_new_code(self):
         self.code = self.new_code
-        print "Code Changed"
+        # print "Code Changed"
 
     def numberEnteredAt(self, index):
         return type(self.new_code[index]) == int
@@ -58,7 +58,7 @@ class Safe:
             if self.isReady and not self.numberEnteredAt(0) and not self.numberEnteredAt(1) and not self.numberEnteredAt(2):
                 if self.code[0] == n:
                     self.new_code[0] = n
-                    print "First Number Entered"
+                    # print "First Number Entered"
             else:
                 self.reset()
 
@@ -72,7 +72,7 @@ class Safe:
             if self.numberEnteredAt(0) and not self.numberEnteredAt(1) and not self.numberEnteredAt(2):
                 if self.code[1] == n:
                     self.new_code[1] = n
-                    print "Second Number Entered"
+                    # print "Second Number Entered"
             else:
                 self.reset()
 
@@ -86,7 +86,7 @@ class Safe:
             if self.numberEnteredAt(0) and self.numberEnteredAt(1) and not self.numberEnteredAt(2):
                 if self.code[2] == n:
                     self.new_code[2] = n
-                    print "Third Number Entered"
+                    # print "Third Number Entered"
             else:
                 self.reset()
 
@@ -151,8 +151,8 @@ class ColorMixer(QtGui.QWidget):
         if ok:
             self.safe.secret = secret
             self.settings.setValue("secret", secret)
-            print "New secret saved."
-        print secret
+            # print "New secret saved."
+        # print secret
 
     def save_new_code(self):
         self.settings.setValue("code", self.safe.code)
